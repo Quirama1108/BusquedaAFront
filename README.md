@@ -4,15 +4,18 @@ Por razones practicas se eliminó la carpeta node_modules al ocupar mucho espaci
 
 Por ello, se debe seguir estos pasos:
 
-1. Instalar todos los modulos y dependencias necesarias:
-# npm install
+## npm install
+Instalar todos los modulos y dependencias necesarias:
 
-2. Correr el código:
-# npm run dev 
+## npm run dev 
+Correr el código:
 
-Descripción del Código:
+## npm test
+Pruebas unitarias
 
-# SeeFlights.tsx
+# Descripción del Código:
+
+## SeeFlights.tsx
 Es un componente que muestra la interfaz de usuario para buscar y mostrar vuelos. Permite a los usuarios seleccionar ciudades de origen y destino, fechas de viaje y número de pasajeros. Además, proporciona funcionalidad para filtrar y ordenar los vuelos disponibles.
 
 Funcionalidades Principales:
@@ -29,7 +32,7 @@ Instrucciones de Uso
 - Modificación de Búsqueda: Si se desea cambiar la búsqueda, se puede hacer clic en el botón "Modificar Búsqueda" para volver al formulario de búsqueda.
 - Interacción con Vuelos: Se pueden aplicar filtros y ordenar los vuelos según el precio, la duración, la disponibilidad de vuelos directos, etc.
 
-# VerPrecios
+## VerPrecios
 Es un componente que muestra los precios y detalles de los vuelos disponibles entre una ciudad de origen y una ciudad de destino seleccionadas.
 
 Funcionalidades Principales
