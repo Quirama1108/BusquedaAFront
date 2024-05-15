@@ -1,4 +1,4 @@
-# Front-end correspondiente al Sprint 2 del módulo de Busqueda de Vuelos A - Fabrica Escuela
+# Front-end correspondiente al Sprint 3 del módulo de Busqueda de Vuelos A - Fabrica Escuela
 
 Por razones practicas se eliminó la carpeta node_modules al ocupar mucho espacio del proyecto, provocando que tanto comprimirlo como descargarlo tarde más.
 
