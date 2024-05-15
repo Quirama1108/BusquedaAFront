@@ -1,5 +1,9 @@
 # Front-end correspondiente al Sprint 3 del módulo de Busqueda de Vuelos A - Fabrica Escuela
 
+Para el sprint 3, se añadió la sección del historial, sección ejecutiva y económica, y el resumen del vuelo.
+Por ahora y de acuerdo con los mockups, el botón para seleccionar vuelo está en la escala de cada vuelo. 
+El último botón "Confirmar Vuelo" no tiene una funcionalidad adaptada pues ese redirecciona a la sección de reserva de vuelos (otro modulo) 
+
 Por razones practicas se eliminó la carpeta node_modules al ocupar mucho espacio del proyecto, provocando que tanto comprimirlo como descargarlo tarde más.
 
 Por ello, se debe seguir estos pasos:
