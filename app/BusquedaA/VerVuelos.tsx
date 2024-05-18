@@ -63,6 +63,18 @@ export default function VerVuelos() {
       setShowPrices(true);
       setShowMainButtons(false);
       setShowModifySearch(true);
+    } else {
+      let errorMessage = "";
+    if (!originCityFilled) {
+      errorMessage += "Por favor, complete el campo de origen.\n";
+    }
+    if (!destinationCityFilled) {
+      errorMessage += "Por favor, complete el campo de destino.\n";
+    }
+    if (!passengerSelectionConfirmed) {
+      errorMessage += "Por favor, confirme la selección de pasajeros.\n";
+    }
+    alert(errorMessage);
     }
   };
 
@@ -306,27 +318,27 @@ const handleOriginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                 <div className="passenger-type">
                   <label className = "title-sits">Adultos</label>
                   <div className="passenger-counter">
-                    <button onClick={() => handleAdultChange(Math.max(adults - 1, 0))}>-</button>
+                    <button type="button" onClick={() => handleAdultChange(Math.max(adults - 1, 0))}>-</button>
                     <span>{adults}</span>
-                    <button onClick={() => handleAdultChange(adults + 1)}>+</button>
+                    <button type="button" onClick={() => handleAdultChange(adults + 1)}>+</button>
                   </div>
                 </div>
                 <label className="sit-description">Desde 12 años</label>
                 <div className="passenger-type">
                   <label className = "title-sits">Niños</label>
                   <div className="passenger-counter">
-                    <button onClick={() => handleChildrenChange(Math.max(child - 1, 0))}>-</button>
+                    <button type="button" onClick={() => handleChildrenChange(Math.max(child - 1, 0))}>-</button>
                     <span>{child}</span>
-                    <button onClick={() => handleChildrenChange(child + 1)}>+</button>
+                    <button type="button" onClick={() => handleChildrenChange(child + 1)}>+</button>
                   </div>
                 </div>
                 <label className="sit-description">De 2 a 11 años</label>
                 <div className="passenger-type">
                   <label className = "title-sits">Bebés</label>
                   <div className="passenger-counter" >
-                    <button onClick={() => handleInfantsChange(Math.max(infants - 1, 0))}>-</button>
+                    <button type="button" onClick={() => handleInfantsChange(Math.max(infants - 1, 0))}>-</button>
                     <span>{infants}</span>
-                    <button onClick={() => handleInfantsChange(infants + 1)}>+</button>
+                    <button type="button" onClick={() => handleInfantsChange(infants + 1)}>+</button>
                   </div>
                 </div>
                 <label className="sit-description">Menores de 2 años</label>
